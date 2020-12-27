@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libdepends.a  CMakeFiles/depends.dir/param.cpp.o CMakeFiles/depends.dir/udp.cpp.o CMakeFiles/depends.dir/nav.cpp.o CMakeFiles/depends.dir/_freecplus.cpp.o CMakeFiles/depends.dir/r2000.cpp.o CMakeFiles/depends.dir/net.cpp.o
+/usr/bin/ranlib ../lib/libdepends.a
