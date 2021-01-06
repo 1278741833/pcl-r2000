@@ -8,11 +8,11 @@ int position = 0;
 #define CONFIG11x
 #define READ_FROM_SENSOR
 const double pi = acos(-1.0);
-MatrixXf m(4200, 3);
+MatrixXf m(8400, 3);
 R2000::R2000()
 {
 	updateParams();
-
+	count = 0;
 	raw_data_file_idx = 0;
 	indentif_ts = 0;
 	update = false;
@@ -96,35 +96,28 @@ void R2000::NavStart(void)
 	cout << "SENSOR INIT SUCCESS" << endl;
 
 	inited = true;
-
+	count = 5;
 	while (1)
 	{
 		usleep(20000); //2->10
-
-		if (sample() != 0)
+		driver.setSamplesPerScan(8400);
+		while (1)
 		{
-			//printf("scan this failed\n");
-			continue;
+			if (sample(8400) == 0)
+			{
+				break;
+			}
 		}
-	}
-}
 
-void R2000::sendstart(void)
-{
-	while (true)
-	{
-		//cout << "come here" << endl;
-		CUdpClient UdpClient;
-		UdpClient.ConnectToServer(starg.ip, starg.port);
-	
-		if (UdpClient.Write(strbuffer, position) == true)
+		usleep(20000); //2->10
+		driver.setSamplesPerScan(7200);
+		while (1)
 		{
-			printf("send  points ok\n");
+			if (sample(7200) == 0)
+			{
+				break;
+			}
 		}
-		else
-			printf("send  points failed\n");
-
-		usleep(100000);
 	}
 }
 
@@ -138,23 +131,34 @@ void R2000::ICP(void)
 		{
 			cout << "thread icp vdatalist.size()=!!%d!!" << vdatalist.size() << endl;
 			pcl::PointCloud<pcl::PointXYZ>::Ptr input_cloud(new pcl::PointCloud<pcl::PointXYZ>);
-			input_cloud->width = 4200 * numberscan;
+			input_cloud->width = 8400 *count + 7200 * count;
 			input_cloud->height = 1;
 			input_cloud->is_dense = false;
 			input_cloud->points.resize(input_cloud->width * input_cloud->height);
-			for (int i = 0; i < vdatalist.size(); i++)
+			for (int i = 0; i < numberscan / 2; i++)
 			{
-				for (int j = 0; j < 4200; j++)
+				for (int j = 0; j < 8400; j++)
 				{
 					//each matrixXf
-					input_cloud->points[i * vdatalist.size() + j].x = vdatalist[i](j, 0);
-					input_cloud->points[i * vdatalist.size() + j].y = vdatalist[i](j, 1);
+					input_cloud->points[i * 8400 + j].x = vdatalist[i](j, 0);
+					input_cloud->points[i * 8400 + j].y = vdatalist[i](j, 1);
+					input_cloud->points[i * 8400 + j].z = 0;
 				}
 			}
-			
-			//cload icp 
+			for (int i = numberscan / 2; i < numberscan; i++)
+			{
+				for (int j = 0; j < 7200; j++)
+				{
+					//each matrixXf
+					input_cloud->points[i * 7200 + j].x = vdatalist[i](j, 0);
+					input_cloud->points[i * 7200 + j].y = vdatalist[i](j, 1);
+					input_cloud->points[i * 7200 + j].z = 0;
+				}
+			}
+			pcl::io::savePCDFileASCII("input_cloud.pcd", *input_cloud);
+			sleep(50);
+			//cload icp
 			pcl::PointCloud<pcl::PointXYZ>::Ptr target_cloud(new pcl::PointCloud<pcl::PointXYZ>);
-			
 
 			if (pcl::io::loadPCDFile<pcl::PointXYZ>("r2000_1.pcd", *target_cloud) == -1) //*打开点云文件
 				printf("load failed\n");
@@ -180,7 +184,7 @@ void R2000::ICP(void)
 			// std::cerr << "target_cloud after filtering: " << std::endl;
 			// std::cerr << *cloud_filtered << std::endl;
 
-			// pcl::io::savePCDFileASCII("cloud_filtered.pcd", *cloud_filtered);
+			
 
 			pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor1;
 			sor.setInputCloud(input_cloud);
@@ -245,54 +249,60 @@ void R2000::ICP(void)
 			// printf("rotatez=%lf\n", yaw);
 
 			vdatalist.clear();
-			
 		}
-		
 	}
 }
 
 void addsample(MatrixXf a)
 {
-	if(vdatalist.size()>=numberscan)
+	if (vdatalist.size() >= numberscan)
 		return;
 
 	vdatalist.push_back(a);
 	//cout << "thread !!addsample vdatalist.size()=%d" << vdatalist.size() << endl;
 }
 
-int R2000::sample(void)
+int R2000::sample(int perscan)
 {
+	static int sample = 0;
 	int scans_available = driver.getFullScansAvailable();
 
 	if (scans_available == 0)
 	{
-		
+
 		return -1;
 	}
 
 	ScanData scandata = driver.getFullScan(); //getFullScan
 
-	
+	if (scandata.distance_data.size() != perscan)
+		return -1;
+	cout<<"scandatasize "<<scandata.distance_data.size()<<endl;
 	const float first_angle = ((float)scandata.headers[0].first_angle) / 10000;
 	for (int idx = 0; idx < scandata.distance_data.size(); idx++)
 	{
-
+		if(scandata.distance_data[idx]>100000)
+			continue;
 		float ang = first_angle + param->r2000_sens_angstep * idx;
 		float r = ang * pi / 180;
 
-		
-		m(idx, 0) = scandata.distance_data[idx] * sin(r);
-		m(idx, 1) = scandata.distance_data[idx] * cos(r);
+		m(idx, 0) = scandata.distance_data[idx] * cos(r);
+		m(idx, 1) = scandata.distance_data[idx] * sin(r);
 		m(idx, 2) = 0;
 	}
-
+	sample++;
 	//MatrixXf a;
 	// a.col(0) = m.col(0) * m.col(1).array().sin();
 	// a.col(1) = m.col(0) * m.col(1).cos();
 	// a.col(2) = m.col(2);
 	addsample(m);
-
-	return 0;
+	if (sample == count)
+	{
+		sample = 0;
+		return 0;
+	}
+	else
+		return sample;
 }
 
 void R2000::ThreadR2000Nav()

@@ -38,7 +38,7 @@ public:
 	
 	/* r2000 sensor state init */
 	bool inited = false;
-
+	int count;
 	bool update;
 	long int last_getdata = 0;
 	
@@ -52,7 +52,7 @@ public:
 
 	void NavStart(void);
 	
-	int  sample(void);
+	int  sample(int perscan);
 	void send(void);
 	void sendstart(void);
 	void ICP(void);

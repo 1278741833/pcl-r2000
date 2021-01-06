@@ -173,8 +173,8 @@ bool Network::NetStart()
 
 		int getbuflen = Tcp_Server.rev_data(Tcp_Server.client_addr);
 
-		//  if (getbuflen > 0)
-		//  {
+		 if (getbuflen > 0)
+		 {
 		char ip[20] = {0};
 
 		strcpy(ip, Tcp_Server.GetIP());
@@ -195,7 +195,7 @@ bool Network::NetStart()
 		memcpy(buffer + 4, buf, buflen);
 		Tcp_Server.send_ackdata(buffer, buflen + 4);
 
-			// }
+			}
 	}
 }
 bool Network::biz1(int clientfd, char *buf, int *postion)

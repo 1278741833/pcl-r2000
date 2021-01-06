@@ -60,7 +60,7 @@ using namespace Eigen;
 
 #include "_freecplus.h"
 extern long int systime;
-#define numberscan 5
+#define numberscan 10
 typedef struct
 {
     char ip[31];
