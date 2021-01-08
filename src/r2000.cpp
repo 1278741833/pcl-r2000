@@ -8,7 +8,7 @@ int position = 0;
 #define CONFIG11x
 #define READ_FROM_SENSOR
 const double pi = acos(-1.0);
-MatrixXf m(4200, 3);
+MatrixXf m(8400, 3);
 R2000::R2000()
 {
 	updateParams();
@@ -281,8 +281,8 @@ int R2000::sample(void)
 		float r = ang * pi / 180;
 
 		
-		m(idx, 0) = scandata.distance_data[idx] * sin(r);
-		m(idx, 1) = scandata.distance_data[idx] * cos(r);
+		m(idx, 0) = scandata.distance_data[idx] * cos(r);
+		m(idx, 1) = scandata.distance_data[idx] * sin(r);
 		m(idx, 2) = 0;
 	}
 
