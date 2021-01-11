@@ -1,0 +1,29 @@
+---- Nav Matches (28 in 7 files) ----
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		if(last_time == Nav->r2000.sourcedata.ts)
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		last_time = Nav->r2000.sourcedata.ts;
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		if(false == record_start || Nav->param.sim_record_cnt >= dlist.size())
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 			if(Nav->param.sim_record_cnt >= dlist.size())
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		MatrixXf temp(Nav->param.r2000_sens_smp_cnt,2);
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		if(1 == Nav->param.sim_noise_active)
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 			temp = MatrixXd::Random(Nav->param.r2000_sens_smp_cnt,2);
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 			temp.col(S_FEA_DIST) *= Nav->param.sim_noise_dist;
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 			temp.col(S_FEA_ANG)  *= Nav->param.sim_noise_ang;
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		temp += Nav->r2000.sourcedata.m;
+DFILTER::filter_main in dfilter.cpp (G:\share\pcl_proj\cloudPcl\src) : 		sim_data.height = Nav->r2000.sourcedata.height;
+main.cpp (G:\share\pcl_proj\cloudPcl) line 4 : COMMANDER *Nav;
+main in main.cpp (G:\share\pcl_proj\cloudPcl) : 	Nav = COMMANDER::getInstance();
+main in main.cpp (G:\share\pcl_proj\cloudPcl) : 	return Nav->run();
+main.h (G:\share\pcl_proj\cloudPcl\inc) line 90 : extern COMMANDER *Nav;
+COMMANDER::run in nav.cpp (G:\share\pcl_proj\cloudPcl\src) : 		Nav->time = tv.tv_sec *1000 + tv.tv_usec/1000;
+NETWORK::udpPackingPacket in network.cpp (G:\share\pcl_proj\cloudPcl\src) : 	MatrixXf  u_data =	 transFromAngToAxis(Nav->r2000.sourcedata.m);
+NETWORK::udpSendRun in network.cpp (G:\share\pcl_proj\cloudPcl\src) : 	udp_server.sendInit(Nav->param.net_tcp_port,tcp_server.client_addr);
+NETWORK::tcpServerRun in network.cpp (G:\share\pcl_proj\cloudPcl\src) : 	tcp_server.init(Nav->param.net_udp_port,false);
+R2000::init in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	std::cout << "Connecting to scanner at " << Nav->param.r2000_sens_ip << " ... ";
+R2000::init in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	if (driver.connect(Nav->param.r2000_sens_ip, 80))
+R2000::init in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 		std::cerr << "Connection to scanner at " << Nav->param.r2000_sens_ip << " failed!" << std::endl;
+R2000::init in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	driver.setScanFrequency(Nav->param.r2000_sens_smp_frq);
+R2000::init in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	driver.setSamplesPerScan(Nav->param.r2000_sens_smp_cnt);
+R2000::sample in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 		float ang = first_angle + Nav->param.r2000_sens_angstep * idx;
+R2000::sample in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	sourcedata.ts = Nav->time;
+R2000::sample in r2000.cpp (G:\share\pcl_proj\cloudPcl\src) : 	//printf("sample:%ld\n",Nav->time);
+recordSourceData in terminal_cmd.cpp (G:\share\pcl_proj\cloudPcl\src) : 	//	Nav->r2000.record_start = true;

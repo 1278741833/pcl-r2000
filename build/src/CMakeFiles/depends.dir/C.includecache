@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/ini.h
+stdio.h
+-
+
+/mnt/hgfs/share/pcl_proj/cloudPcl/src/ini.c
+stdio.h
+-
+ctype.h
+-
+string.h
+-
+ini.h
+/mnt/hgfs/share/pcl_proj/cloudPcl/src/ini.h
+stdlib.h
+-
+

@@ -1,0 +1,4 @@
+Log file created at: 2021/01/10 22:08:22
+Running on machine: ubuntu
+Log line format: [[IWEF]:yyyy-mm-dd hh:mm:ss.uuuuuu threadid file:line] msg
+[I:2021-01-10 22:08:22.141201 30205 util.cpp:61] [Glog]Init Glog System Finish.
