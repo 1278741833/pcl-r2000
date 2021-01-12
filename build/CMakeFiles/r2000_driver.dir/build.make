@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl
+CMAKE_SOURCE_DIR = /home/zxy/zxy/cloudPcl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl/build
+CMAKE_BINARY_DIR = /home/zxy/zxy/cloudPcl/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/r2000_driver.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/r2000_driver.dir/flags.make
 
 CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o: CMakeFiles/r2000_driver.dir/flags.make
 CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o: ../src/driver/r2000_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o -c /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/r2000_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o -c /home/zxy/zxy/cloudPcl/src/driver/r2000_driver.cpp
 
 CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/r2000_driver.cpp > CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zxy/zxy/cloudPcl/src/driver/r2000_driver.cpp > CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.i
 
 CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/r2000_driver.cpp -o CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zxy/zxy/cloudPcl/src/driver/r2000_driver.cpp -o CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.s
 
 CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/r2000_driver.dir/src/driver/r2000_driver.cpp.o.provides.build: CMakeF
 
 CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o: CMakeFiles/r2000_driver.dir/flags.make
 CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o: ../src/driver/http_command_interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o -c /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/http_command_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o -c /home/zxy/zxy/cloudPcl/src/driver/http_command_interface.cpp
 
 CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/http_command_interface.cpp > CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zxy/zxy/cloudPcl/src/driver/http_command_interface.cpp > CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.i
 
 CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/http_command_interface.cpp -o CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zxy/zxy/cloudPcl/src/driver/http_command_interface.cpp -o CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.s
 
 CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/r2000_driver.dir/src/driver/http_command_interface.cpp.o.provides.bui
 
 CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o: CMakeFiles/r2000_driver.dir/flags.make
 CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o: ../src/driver/scan_data_receiver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o -c /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/scan_data_receiver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o -c /home/zxy/zxy/cloudPcl/src/driver/scan_data_receiver.cpp
 
 CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/scan_data_receiver.cpp > CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zxy/zxy/cloudPcl/src/driver/scan_data_receiver.cpp > CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.i
 
 CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/share/pcl_proj/cloudPcl/src/driver/scan_data_receiver.cpp -o CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zxy/zxy/cloudPcl/src/driver/scan_data_receiver.cpp -o CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.s
 
 CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o.requires:
 
@@ -143,7 +143,7 @@ lib/libr2000_driver.a: CMakeFiles/r2000_driver.dir/src/driver/http_command_inter
 lib/libr2000_driver.a: CMakeFiles/r2000_driver.dir/src/driver/scan_data_receiver.cpp.o
 lib/libr2000_driver.a: CMakeFiles/r2000_driver.dir/build.make
 lib/libr2000_driver.a: CMakeFiles/r2000_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library lib/libr2000_driver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library lib/libr2000_driver.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/r2000_driver.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/r2000_driver.dir/link.txt --verbose=$(VERBOSE)
 
@@ -163,6 +163,6 @@ CMakeFiles/r2000_driver.dir/clean:
 .PHONY : CMakeFiles/r2000_driver.dir/clean
 
 CMakeFiles/r2000_driver.dir/depend:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/share/pcl_proj/cloudPcl /mnt/hgfs/share/pcl_proj/cloudPcl /mnt/hgfs/share/pcl_proj/cloudPcl/build /mnt/hgfs/share/pcl_proj/cloudPcl/build /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/r2000_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zxy/zxy/cloudPcl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zxy/zxy/cloudPcl /home/zxy/zxy/cloudPcl /home/zxy/zxy/cloudPcl/build /home/zxy/zxy/cloudPcl/build /home/zxy/zxy/cloudPcl/build/CMakeFiles/r2000_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/r2000_driver.dir/depend
 

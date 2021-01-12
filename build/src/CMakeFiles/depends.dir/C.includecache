@@ -10,7 +10,7 @@
 stdio.h
 -
 
-/mnt/hgfs/share/pcl_proj/cloudPcl/src/ini.c
+/home/zxy/zxy/cloudPcl/src/ini.c
 stdio.h
 -
 ctype.h
@@ -18,7 +18,7 @@ ctype.h
 string.h
 -
 ini.h
-/mnt/hgfs/share/pcl_proj/cloudPcl/src/ini.h
+/home/zxy/zxy/cloudPcl/src/ini.h
 stdlib.h
 -
 

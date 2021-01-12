@@ -1,7 +1,7 @@
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/edit_cache.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/rebuild_cache.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/cloudPCL.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/r2000_driver.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/src/CMakeFiles/edit_cache.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/src/CMakeFiles/rebuild_cache.dir
-/mnt/hgfs/share/pcl_proj/cloudPcl/build/src/CMakeFiles/depends.dir
+/home/zxy/zxy/cloudPcl/build/CMakeFiles/edit_cache.dir
+/home/zxy/zxy/cloudPcl/build/CMakeFiles/rebuild_cache.dir
+/home/zxy/zxy/cloudPcl/build/CMakeFiles/cloudPCL.dir
+/home/zxy/zxy/cloudPcl/build/CMakeFiles/r2000_driver.dir
+/home/zxy/zxy/cloudPcl/build/src/CMakeFiles/edit_cache.dir
+/home/zxy/zxy/cloudPcl/build/src/CMakeFiles/rebuild_cache.dir
+/home/zxy/zxy/cloudPcl/build/src/CMakeFiles/depends.dir

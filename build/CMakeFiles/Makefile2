@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl
+CMAKE_SOURCE_DIR = /home/zxy/zxy/cloudPcl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl/build
+CMAKE_BINARY_DIR = /home/zxy/zxy/cloudPcl/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/cloudPCL.dir
@@ -67,7 +67,7 @@ CMakeFiles/cloudPCL.dir/all: CMakeFiles/r2000_driver.dir/all
 CMakeFiles/cloudPCL.dir/all: src/CMakeFiles/depends.dir/all
 	$(MAKE) -f CMakeFiles/cloudPCL.dir/build.make CMakeFiles/cloudPCL.dir/depend
 	$(MAKE) -f CMakeFiles/cloudPCL.dir/build.make CMakeFiles/cloudPCL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=1,2 "Built target cloudPCL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=1,2 "Built target cloudPCL"
 .PHONY : CMakeFiles/cloudPCL.dir/all
 
 # Include target in all.
@@ -77,9 +77,9 @@ all: CMakeFiles/cloudPCL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cloudPCL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cloudPCL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 0
 .PHONY : CMakeFiles/cloudPCL.dir/rule
 
 # Convenience name for target.
@@ -104,7 +104,7 @@ clean: CMakeFiles/cloudPCL.dir/clean
 CMakeFiles/r2000_driver.dir/all:
 	$(MAKE) -f CMakeFiles/r2000_driver.dir/build.make CMakeFiles/r2000_driver.dir/depend
 	$(MAKE) -f CMakeFiles/r2000_driver.dir/build.make CMakeFiles/r2000_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=16,17,18,19 "Built target r2000_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=16,17,18,19 "Built target r2000_driver"
 .PHONY : CMakeFiles/r2000_driver.dir/all
 
 # Include target in all.
@@ -114,9 +114,9 @@ all: CMakeFiles/r2000_driver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/r2000_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/r2000_driver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 0
 .PHONY : CMakeFiles/r2000_driver.dir/rule
 
 # Convenience name for target.
@@ -159,7 +159,7 @@ src/preinstall:
 src/CMakeFiles/depends.dir/all:
 	$(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/depend
 	$(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target depends"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxy/zxy/cloudPcl/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target depends"
 .PHONY : src/CMakeFiles/depends.dir/all
 
 # Include target in all.
@@ -169,9 +169,9 @@ all: src/CMakeFiles/depends.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/depends.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/depends.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/depends.dir/rule
 
 # Convenience name for target.

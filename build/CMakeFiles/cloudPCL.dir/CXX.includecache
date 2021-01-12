@@ -255,6 +255,8 @@ INIReader.h
 ../inc/INIReader.h
 util.h
 ../inc/util.h
+icp.h
+../inc/icp.h
 r2000.h
 ../inc/r2000.h
 net.h
@@ -267,8 +269,6 @@ terminal_cmd.h
 ../inc/terminal_cmd.h
 commander.h
 ../inc/commander.h
-icp.h
-../inc/icp.h
 _freecplus.h
 ../inc/_freecplus.h
 
@@ -322,9 +322,9 @@ ctime
 main.h
 ../inc/main.h
 
-/mnt/hgfs/share/pcl_proj/cloudPcl/main.cpp
+/home/zxy/zxy/cloudPcl/main.cpp
 main.h
-/mnt/hgfs/share/pcl_proj/cloudPcl/main.h
+/home/zxy/zxy/cloudPcl/main.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

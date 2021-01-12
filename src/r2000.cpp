@@ -83,6 +83,7 @@ int R2000::sample(void)
 
 void R2000::ThreadR2000Nav()
 {
+	ICP_test();
 	cout << "[START THREAD] --> R2000 SAMPLE" << endl;
 	thread r2000Navthread(&R2000::NavStart, this);
 	r2000Navthread.detach();

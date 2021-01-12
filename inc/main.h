@@ -45,7 +45,7 @@ using namespace Eigen;
 #define R2A 180/PAI
 #define LOCSTATE Matrix<double,5,1>
 
-#define PCL_OPENx
+#define PCL_OPEN 1
 
 
 #ifdef PCL_OPEN
@@ -68,7 +68,7 @@ using namespace Eigen;
 #include "ini.h"
 #include "INIReader.h"
 #include "util.h"
-
+#include "icp.h"
 
 #include "r2000.h"
 #include "net.h"
@@ -79,7 +79,6 @@ using namespace Eigen;
 #include "terminal_cmd.h"
 #include "commander.h"
 
-#include "icp.h"
 
 
 

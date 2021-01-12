@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl
+CMAKE_SOURCE_DIR = /home/zxy/zxy/cloudPcl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/share/pcl_proj/cloudPcl/build
+CMAKE_BINARY_DIR = /home/zxy/zxy/cloudPcl/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles /mnt/hgfs/share/pcl_proj/cloudPcl/build/src/CMakeFiles/progress.marks
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles 0
+	cd /home/zxy/zxy/cloudPcl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles /home/zxy/zxy/cloudPcl/build/src/CMakeFiles/progress.marks
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxy/zxy/cloudPcl/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zxy/zxy/cloudPcl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/depends.dir/rule:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/depends.dir/rule
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/depends.dir/rule
 .PHONY : src/CMakeFiles/depends.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ depends: src/CMakeFiles/depends.dir/rule
 
 # fast build rule for target.
 depends/fast:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/build
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/build
 .PHONY : depends/fast
 
 INIReader.o: INIReader.cpp.o
@@ -131,7 +131,7 @@ INIReader.o: INIReader.cpp.o
 
 # target to build an object file
 INIReader.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.o
 .PHONY : INIReader.cpp.o
 
 INIReader.i: INIReader.cpp.i
@@ -140,7 +140,7 @@ INIReader.i: INIReader.cpp.i
 
 # target to preprocess a source file
 INIReader.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.i
 .PHONY : INIReader.cpp.i
 
 INIReader.s: INIReader.cpp.s
@@ -149,7 +149,7 @@ INIReader.s: INIReader.cpp.s
 
 # target to generate assembly for a file
 INIReader.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/INIReader.cpp.s
 .PHONY : INIReader.cpp.s
 
 _freecplus.o: _freecplus.cpp.o
@@ -158,7 +158,7 @@ _freecplus.o: _freecplus.cpp.o
 
 # target to build an object file
 _freecplus.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.o
 .PHONY : _freecplus.cpp.o
 
 _freecplus.i: _freecplus.cpp.i
@@ -167,7 +167,7 @@ _freecplus.i: _freecplus.cpp.i
 
 # target to preprocess a source file
 _freecplus.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.i
 .PHONY : _freecplus.cpp.i
 
 _freecplus.s: _freecplus.cpp.s
@@ -176,7 +176,7 @@ _freecplus.s: _freecplus.cpp.s
 
 # target to generate assembly for a file
 _freecplus.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/_freecplus.cpp.s
 .PHONY : _freecplus.cpp.s
 
 commander.o: commander.cpp.o
@@ -185,7 +185,7 @@ commander.o: commander.cpp.o
 
 # target to build an object file
 commander.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.o
 .PHONY : commander.cpp.o
 
 commander.i: commander.cpp.i
@@ -194,7 +194,7 @@ commander.i: commander.cpp.i
 
 # target to preprocess a source file
 commander.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.i
 .PHONY : commander.cpp.i
 
 commander.s: commander.cpp.s
@@ -203,7 +203,7 @@ commander.s: commander.cpp.s
 
 # target to generate assembly for a file
 commander.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/commander.cpp.s
 .PHONY : commander.cpp.s
 
 crc32.o: crc32.cpp.o
@@ -212,7 +212,7 @@ crc32.o: crc32.cpp.o
 
 # target to build an object file
 crc32.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.o
 .PHONY : crc32.cpp.o
 
 crc32.i: crc32.cpp.i
@@ -221,7 +221,7 @@ crc32.i: crc32.cpp.i
 
 # target to preprocess a source file
 crc32.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.i
 .PHONY : crc32.cpp.i
 
 crc32.s: crc32.cpp.s
@@ -230,7 +230,7 @@ crc32.s: crc32.cpp.s
 
 # target to generate assembly for a file
 crc32.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/crc32.cpp.s
 .PHONY : crc32.cpp.s
 
 dfilter.o: dfilter.cpp.o
@@ -239,7 +239,7 @@ dfilter.o: dfilter.cpp.o
 
 # target to build an object file
 dfilter.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.o
 .PHONY : dfilter.cpp.o
 
 dfilter.i: dfilter.cpp.i
@@ -248,7 +248,7 @@ dfilter.i: dfilter.cpp.i
 
 # target to preprocess a source file
 dfilter.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.i
 .PHONY : dfilter.cpp.i
 
 dfilter.s: dfilter.cpp.s
@@ -257,7 +257,7 @@ dfilter.s: dfilter.cpp.s
 
 # target to generate assembly for a file
 dfilter.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/dfilter.cpp.s
 .PHONY : dfilter.cpp.s
 
 icp.o: icp.cpp.o
@@ -266,7 +266,7 @@ icp.o: icp.cpp.o
 
 # target to build an object file
 icp.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.o
 .PHONY : icp.cpp.o
 
 icp.i: icp.cpp.i
@@ -275,7 +275,7 @@ icp.i: icp.cpp.i
 
 # target to preprocess a source file
 icp.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.i
 .PHONY : icp.cpp.i
 
 icp.s: icp.cpp.s
@@ -284,7 +284,7 @@ icp.s: icp.cpp.s
 
 # target to generate assembly for a file
 icp.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/icp.cpp.s
 .PHONY : icp.cpp.s
 
 ini.o: ini.c.o
@@ -293,7 +293,7 @@ ini.o: ini.c.o
 
 # target to build an object file
 ini.c.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.o
 .PHONY : ini.c.o
 
 ini.i: ini.c.i
@@ -302,7 +302,7 @@ ini.i: ini.c.i
 
 # target to preprocess a source file
 ini.c.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.i
 .PHONY : ini.c.i
 
 ini.s: ini.c.s
@@ -311,7 +311,7 @@ ini.s: ini.c.s
 
 # target to generate assembly for a file
 ini.c.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/ini.c.s
 .PHONY : ini.c.s
 
 net.o: net.cpp.o
@@ -320,7 +320,7 @@ net.o: net.cpp.o
 
 # target to build an object file
 net.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.o
 .PHONY : net.cpp.o
 
 net.i: net.cpp.i
@@ -329,7 +329,7 @@ net.i: net.cpp.i
 
 # target to preprocess a source file
 net.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.i
 .PHONY : net.cpp.i
 
 net.s: net.cpp.s
@@ -338,7 +338,7 @@ net.s: net.cpp.s
 
 # target to generate assembly for a file
 net.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/net.cpp.s
 .PHONY : net.cpp.s
 
 network.o: network.cpp.o
@@ -347,7 +347,7 @@ network.o: network.cpp.o
 
 # target to build an object file
 network.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.o
 .PHONY : network.cpp.o
 
 network.i: network.cpp.i
@@ -356,7 +356,7 @@ network.i: network.cpp.i
 
 # target to preprocess a source file
 network.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.i
 .PHONY : network.cpp.i
 
 network.s: network.cpp.s
@@ -365,7 +365,7 @@ network.s: network.cpp.s
 
 # target to generate assembly for a file
 network.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/network.cpp.s
 .PHONY : network.cpp.s
 
 r2000.o: r2000.cpp.o
@@ -374,7 +374,7 @@ r2000.o: r2000.cpp.o
 
 # target to build an object file
 r2000.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.o
 .PHONY : r2000.cpp.o
 
 r2000.i: r2000.cpp.i
@@ -383,7 +383,7 @@ r2000.i: r2000.cpp.i
 
 # target to preprocess a source file
 r2000.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.i
 .PHONY : r2000.cpp.i
 
 r2000.s: r2000.cpp.s
@@ -392,7 +392,7 @@ r2000.s: r2000.cpp.s
 
 # target to generate assembly for a file
 r2000.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/r2000.cpp.s
 .PHONY : r2000.cpp.s
 
 terminal_cmd.o: terminal_cmd.cpp.o
@@ -401,7 +401,7 @@ terminal_cmd.o: terminal_cmd.cpp.o
 
 # target to build an object file
 terminal_cmd.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.o
 .PHONY : terminal_cmd.cpp.o
 
 terminal_cmd.i: terminal_cmd.cpp.i
@@ -410,7 +410,7 @@ terminal_cmd.i: terminal_cmd.cpp.i
 
 # target to preprocess a source file
 terminal_cmd.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.i
 .PHONY : terminal_cmd.cpp.i
 
 terminal_cmd.s: terminal_cmd.cpp.s
@@ -419,7 +419,7 @@ terminal_cmd.s: terminal_cmd.cpp.s
 
 # target to generate assembly for a file
 terminal_cmd.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/terminal_cmd.cpp.s
 .PHONY : terminal_cmd.cpp.s
 
 util.o: util.cpp.o
@@ -428,7 +428,7 @@ util.o: util.cpp.o
 
 # target to build an object file
 util.cpp.o:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.o
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.o
 .PHONY : util.cpp.o
 
 util.i: util.cpp.i
@@ -437,7 +437,7 @@ util.i: util.cpp.i
 
 # target to preprocess a source file
 util.cpp.i:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.i
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.i
 .PHONY : util.cpp.i
 
 util.s: util.cpp.s
@@ -446,7 +446,7 @@ util.s: util.cpp.s
 
 # target to generate assembly for a file
 util.cpp.s:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.s
+	cd /home/zxy/zxy/cloudPcl/build && $(MAKE) -f src/CMakeFiles/depends.dir/build.make src/CMakeFiles/depends.dir/util.cpp.s
 .PHONY : util.cpp.s
 
 # Help Target
@@ -505,6 +505,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/hgfs/share/pcl_proj/cloudPcl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zxy/zxy/cloudPcl/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -23,7 +23,7 @@ CMakeFiles/cloudPCL.dir/main.cpp.o
  ../inc/r2000.h
  ../inc/terminal_cmd.h
  ../inc/util.h
- /mnt/hgfs/share/pcl_proj/cloudPcl/main.cpp
+ /home/zxy/zxy/cloudPcl/main.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense

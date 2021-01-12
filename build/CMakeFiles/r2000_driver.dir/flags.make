@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++14 -g -w -L../lib/pepperl_fuchs_r2000 -lr2000_driver -L/us
 
 CXX_DEFINES = -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL)"
 
-CXX_INCLUDES = -I/mnt/hgfs/share/pcl_proj/cloudPcl/inc -I/mnt/hgfs/share/pcl_proj/cloudPcl/inc/google_log -I/usr/include/vtk-6.2 -I/usr/include/freetype2 -I/usr/include/x86_64-linux-gnu/freetype2 -I/usr/include/x86_64-linux-gnu -I/usr/include/jsoncpp 
+CXX_INCLUDES = -I/home/zxy/zxy/cloudPcl/inc -I/home/zxy/zxy/cloudPcl/inc/google_log -I/usr/include/vtk-6.2 -I/usr/include/freetype2 -I/usr/include/x86_64-linux-gnu/freetype2 -I/usr/include/x86_64-linux-gnu -I/usr/include/jsoncpp 
 

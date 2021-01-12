@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/hgfs/share/pcl_proj/cloudPcl/main.cpp" "/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/cloudPCL.dir/main.cpp.o"
+  "/home/zxy/zxy/cloudPcl/main.cpp" "/home/zxy/zxy/cloudPcl/build/CMakeFiles/cloudPCL.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -35,8 +35,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/hgfs/share/pcl_proj/cloudPcl/build/src/CMakeFiles/depends.dir/DependInfo.cmake"
-  "/mnt/hgfs/share/pcl_proj/cloudPcl/build/CMakeFiles/r2000_driver.dir/DependInfo.cmake"
+  "/home/zxy/zxy/cloudPcl/build/src/CMakeFiles/depends.dir/DependInfo.cmake"
+  "/home/zxy/zxy/cloudPcl/build/CMakeFiles/r2000_driver.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

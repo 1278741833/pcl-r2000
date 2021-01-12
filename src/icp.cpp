@@ -42,7 +42,7 @@ void ICP_test(void)
 	pcl::PointCloud<pcl::PointXYZ>::Ptr souce_cloud(new pcl::PointCloud<pcl::PointXYZ>);
 	pcl::io::loadPCDFile<pcl::PointXYZ>("3-2.pcd", *souce_cloud);
 	int pnt_size = souce_cloud->size();
-	int layer_num = 100;
+	int layer_num = 10;
 	float h_step = 5;
 
 	
@@ -57,8 +57,8 @@ void ICP_test(void)
 		for (int j = 0; j < pnt_size; j++)
 		{
 			//each matrixXf
-			input_cloud->points[i * pnt_size + j].x = souce_cloud->points[j].x;
-			input_cloud->points[i * pnt_size + j].y = souce_cloud->points[j].y;
+			input_cloud->points[i * pnt_size + j].x = souce_cloud->points[j].x/1000;
+			input_cloud->points[i * pnt_size + j].y = souce_cloud->points[j].y/1000;
 			input_cloud->points[i * pnt_size + j].z = i * h_step;
 		}
 	}

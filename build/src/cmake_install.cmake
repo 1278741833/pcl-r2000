@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/share/pcl_proj/cloudPcl/src
+# Install script for directory: /home/zxy/zxy/cloudPcl/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
